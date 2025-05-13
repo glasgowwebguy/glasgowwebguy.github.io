@@ -1,3 +1,4 @@
+/*
 document.addEventListener("DOMContentLoaded", function () {
   // Netlify Functions base URL (replace with your Netlify site URL)
   const NETLIFY_BASE_URL = 'https://paint-gh.netlify.app/'; // Update this
@@ -214,3 +215,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+*/
