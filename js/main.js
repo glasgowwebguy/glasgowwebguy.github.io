@@ -1,3 +1,5 @@
+/*
+
 document.addEventListener("DOMContentLoaded", function () {
   // Cloudflare Worker base URL (replace with your Worker URL)
   const WORKER_BASE_URL = 'https://my-worker.glasgowwebguy.workers.dev';
@@ -214,3 +216,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+*/
