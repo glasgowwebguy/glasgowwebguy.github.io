@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlasgowWebGuy</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Fonts: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">GlasgowWebGuy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/GlasgowWebGuy" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero py-5 text-center text-light">
+        <div class="container">
+            <h1 class="display-4 fw-bold">GlasgowWebGuy</h1>
+            <p class="lead mb-4">Welcome to my corner of the web!</p>
+            <div class="alert alert-warning d-inline-block" role="alert">
+                <i class="bi bi-cone-striped me-2"></i> Site Under Construction
+            </div>
+            <p class="mt-4">This site is currently built to test some integrations</p>
+        </div>
+        
+<section id="shop" class="shop-section bg-light-orange py-5">
+        <div class="container text-center">
+            <h2 class="display-6 fw-bold mb-4">Shop Paint Guard</h2>
+            <div class="row justify-content-center g-4">
+                <!-- Yellow Paint Guard -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="card shadow h-100">
+                        <a href="assets/img/Paint-Guard-Yellow.png" data-lightbox="product">
+                            <img src="assets/img/Paint-Guard-Yellow.png" class="card-img-top" alt="Paint Guard Yellow">
+                        </a>
+                        <div class="card-body text-start">
+                            <h3 class="card-title h5">Paint Guard – Yellow (90mm)</h3>
+                            <p class="card-text">Professional-grade reusable paint guard in vibrant yellow.</p>
+                            <p class="fw-bold mb-2 price" data-lookup-key="yellowPaintGuard" aria-live="polite">Price: Loading...</p>
+                            <div class="mb-3">
+                                <label for="quantity-yellow" class="form-label">Quantity:</label>
+                                <input type="number" id="quantity-yellow" class="form-control" value="1" min="1" max="100" aria-label="Quantity for Yellow Paint Guard"/>
+                            </div>
+                            <button id="buy-yellow" data-lookup-key="yellowPaintGuard" class="btn btn-warning text-white fw-bold w-100">Buy Yellow</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blue Paint Guard -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="card shadow h-100">
+                        <a href="assets/img/Paint-Guard-Blue.png" data-lightbox="product">
+                            <img src="assets/img/Paint-Guard-Blue.png" class="card-img-top" alt="Paint Guard Blue">
+                        </a>
+                        <div class="card-body text-start">
+                            <h3 class="card-title h5">Paint Guard – Blue (80mm)</h3>
+                            <p class="card-text">Professional-grade reusable paint guard in Blue.</p>
+                            <p class="fw-bold mb-2 price" data-lookup-key="bluePaintGuard" aria-live="polite">Price: Loading...</p>
+                            <div class="mb-3">
+                                <label for="quantity-blue" class="form-label">Quantity:</label>
+                                <input type="number" id="quantity-blue" class="form-control" value="1" min="1" max="100" aria-label="Quantity for Blue Paint Guard"/>
+                            </div>
+                            <button id="buy-blue" data-lookup-key="bluePaintGuard" class="btn btn-primary fw-bold w-100">Buy Blue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">Hey there! I'm <strong>GlasgowWebGuy</strong>, a web enthusiast based in Glasgow.
+                                I love tinkering with web technologies, building projects.
+                                This site is my playground for testing some work.</p>
+                            <p class="card-text"></p>
+                            <a href="https://github.com/GlasgowWebGuy" target="_blank" class="btn btn-primary">
+                                <i class="bi bi-github me-2"></i> Check out my GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 GlasgowWebGuy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
