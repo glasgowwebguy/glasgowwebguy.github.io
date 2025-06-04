@@ -1,12 +1,11 @@
-/*
 document.addEventListener("DOMContentLoaded", function () {
-  // Netlify Functions base URL (replace with your Netlify site URL)
-  const NETLIFY_BASE_URL = 'https://paint-gh.netlify.app/'; // Update this
+  // Cloudflare Worker base URL (replace with your Worker URL)
+  const WORKER_BASE_URL = 'https://my-worker.glasgowwebguy.workers.dev/';
 
   // Fetch and display prices from Stripe
   async function loadPrices() {
     try {
-      const response = await fetch(`${NETLIFY_BASE_URL}/.netlify/functions/get-prices`, {
+      const response = await fetch(`${WORKER_BASE_URL}/get-prices`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -158,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     try {
       // Fetch prices to get the price_id for the lookup_key
-      const priceRes = await fetch(`${NETLIFY_BASE_URL}/.netlify/functions/get-prices`, {
+      const priceRes = await fetch(`${WORKER_BASE_URL}/get-prices`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -175,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       // Create checkout session
-      const checkoutRes = await fetch(`${NETLIFY_BASE_URL}/.netlify/functions/create-checkout`, {
+      const checkoutRes = await fetch(`${WORKER_BASE_URL}/create-checkout`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -215,4 +214,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-*/
