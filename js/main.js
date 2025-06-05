@@ -1,4 +1,4 @@
-
+/*
 
 document.addEventListener("DOMContentLoaded", function () {
   // Cloudflare Worker base URL (replace with your Worker URL)
@@ -217,6 +217,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+*/
 
 
 
