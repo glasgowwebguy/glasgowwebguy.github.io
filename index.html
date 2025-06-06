@@ -87,7 +87,15 @@
                                 <label for="quantity-blue" class="form-label">Quantity:</label>
                                 <input type="number" id="quantity-blue" class="form-control" value="1" min="1" max="100" aria-label="Quantity for Blue Paint Guard"/>
                             </div>
-                            <button id="buy-blue" data-lookup-key="bluePaintGuard" class="btn btn-primary fw-bold w-100">Buy Blue</button>
+                          <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1RWd0dAeP6wBcgoLcZzIwHXK"
+  publishable-key="pk_test_51RJvy4AeP6wBcgoLNq5cKgpV1rt1EFQdk7OSZskfsVyd5Ac0yoXZ9l4uXY467GayResOykFNZcP3WlQmxZ2xIQ2300T7aISoTS"
+>
+</stripe-buy-button>
                         </div>
                     </div>
                 </div>
