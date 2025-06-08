@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const timeoutId = setTimeout(() => controller.abort(), 10000); // 10s timeout
 
           // Update Endpoint fetch adress: https://my-worker.glasgowwebguy.workers.dev/
-            const response = await fetch('https://my-worker.glasgowwebguy.workers.dev', {
+            const response = await fetch('https://contact-form-worker.glasgowwebguy.workers.dev', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
