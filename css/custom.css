@@ -30,3 +30,11 @@ body {
 .card-text {
     line-height: 1.6;
 }
+
+.product-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
