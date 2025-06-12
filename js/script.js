@@ -1,3 +1,5 @@
+// Chat Bubble 
+/*
 async function fetchPhoneNumber() {
     try {
         const response = await fetch('https://chat-bubble-worker.glasgowwebguy.workers.dev/phone');
@@ -34,3 +36,5 @@ document.addEventListener('click', function(event) {
 
 // Initialize chat links on page load
 document.addEventListener('DOMContentLoaded', initChatLinks);
+
+*/
